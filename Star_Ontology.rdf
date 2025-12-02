@@ -80,6 +80,65 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#distanceFromSunLY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#distanceFromSunLY">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#habitable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#habitable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#hasMass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#hasMass">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#orbitalPeriodDays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#orbitalPeriodDays">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#starLuminosity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#starLuminosity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#starTemperatureK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#starTemperatureK">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
