@@ -1,0 +1,21 @@
+Starsystem : A star system consists of one star and one other celestial body 
+
+Constilations : Consists of at least two stars 
+
+A star : can only orbit a black hole or another star 
+
+A planet : Mass smaller than a star
+
+A moon : has to orbit around a planet , mass smaller than a planet
+
+dwarfPlanet : Not a planet, mass smaller than a planet 
+
+Blackhole : Does not orbit any other celestial body .
+
+CelestialBody: 
+Add mass to solarmass automatic calculation
+Add lightyear to parsec automatic calculation
+
+
+Galaxy : contains only celestial Bodies
+
