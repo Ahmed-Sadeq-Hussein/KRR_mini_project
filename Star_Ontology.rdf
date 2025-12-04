@@ -112,6 +112,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#smallerThan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#smallerThan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -229,13 +238,28 @@
 
     <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#discoveredBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Observatory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Constellation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Constellation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Constellation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#hasCelestialBody"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Star"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -243,6 +267,17 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#DwarfPlanet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#smallerThan"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet"/>
     </owl:Class>
     
@@ -250,7 +285,14 @@
 
     <!-- http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Galaxy -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Galaxy"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Galaxy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#hasCelestialBody"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -284,8 +326,21 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#smallerThan"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#orbits"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#orbits"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -318,6 +373,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Planet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#smallerThan"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Star"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -350,6 +411,19 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Star">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#CelestialBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#orbits"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#BlackHole"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Star"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
