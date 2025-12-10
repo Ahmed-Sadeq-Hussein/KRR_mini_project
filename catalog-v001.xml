@@ -3,6 +3,6 @@
     <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16" uri="Untitled.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8" uri="Star_Ontology2.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1765296287281" name="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8/" uri="Star_Ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1765365278447" name="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8/" uri="Star_Ontology.rdf"/>
     </group>
 </catalog>
