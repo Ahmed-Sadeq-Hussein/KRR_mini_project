@@ -1358,8 +1358,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MainSequenceStar"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#RedDwarf"/>
         <obo:OWLObjectProperty_0000025 rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Acuario"/>
-        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
-        <untitled-ontology-16:hasStarSystems rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isOrbitedBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1b"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.6</untitled-ontology-16:distanceFromSun>
@@ -1376,7 +1374,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1b">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
-        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
@@ -1390,7 +1387,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1c">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
-        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
@@ -1404,7 +1400,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1d">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
-        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
@@ -1418,7 +1413,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1e">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
-        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-16:isHabitable>
@@ -1432,7 +1426,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1f">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
-        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isOrbitedBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
