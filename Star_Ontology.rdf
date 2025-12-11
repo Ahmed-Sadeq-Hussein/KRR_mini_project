@@ -1255,6 +1255,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#BrownDwarf"/>
+        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">112.3969</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.4603</untitled-ontology-16:distanceFromSunParsec>
+        <untitled-ontology-16:solarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.741</untitled-ontology-16:solarMass>
+        <untitled-ontology-16:starLuminosity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.6514099</untitled-ontology-16:starLuminosity>
+        <untitled-ontology-16:starTemperatureK rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4665</untitled-ontology-16:starTemperatureK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#StarSystem"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63_b"/>
+        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63"/>
+        <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MilkyWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#GasGiant"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory"/>
+        <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#BD-17_63"/>
+        <untitled-ontology-16:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1640</untitled-ontology-16:hasMass>
+        <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
+        <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">655.57</untitled-ontology-16:orbitalPeriodDays>
+        <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2008</untitled-ontology-8:discoveryYear>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Betelgeuse -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Betelgeuse">
@@ -1327,6 +1365,51 @@
     
 
 
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#SpaceObservatory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MainSequenceStar"/>
+        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1799.5312</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">551.727</untitled-ontology-16:distanceFromSunParsec>
+        <untitled-ontology-16:solarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.022000</untitled-ontology-16:solarMass>
+        <untitled-ontology-16:starLuminosity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.084479400</untitled-ontology-16:starLuminosity>
+        <untitled-ontology-16:starTemperatureK rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5728</untitled-ontology-16:starTemperatureK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#StarSystem"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452_b"/>
+        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452"/>
+        <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MilkyWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#SuperEarth"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler"/>
+        <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Kepler-452"/>
+        <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-16:isHabitable>
+        <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">384.843</untitled-ontology-16:orbitalPeriodDays>
+        <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2015</untitled-ontology-8:discoveryYear>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#LMC -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#LMC">
@@ -1336,13 +1419,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#GroundObservatory"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#M31-TSG1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#M31-TSG1">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#StarSystem"/>
         <untitled-ontology-16:discovered rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Hubble_Space_Telescope"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Andromeda"/>
-        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000254</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Andromeda"/>
+        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2540000</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">778767.54027</untitled-ontology-16:distanceFromSunParsec>
     </owl:NamedIndividual>
     
 
@@ -1379,14 +1471,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Spitzer_Space_Telescope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Spitzer_Space_Telescope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#SpaceObservatory"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MainSequenceStar"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#RedDwarf"/>
         <obo:OWLObjectProperty_0000025 rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Acuario"/>
         <untitled-ontology-16:isOrbitedBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1b"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
+        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1_System"/>
         <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.6</untitled-ontology-16:distanceFromSun>
         <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</untitled-ontology-16:distanceFromSunParsec>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
@@ -1397,12 +1496,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#StarSystem"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1b"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1c"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1d"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1e"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1f"/>
+        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1b -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1b">
-        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#SuperEarth"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
         <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.51</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016</untitled-ontology-8:discoveryYear>
@@ -1413,9 +1526,9 @@
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1c -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1c">
-        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#SuperEarth"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
         <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.42</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016</untitled-ontology-8:discoveryYear>
@@ -1427,8 +1540,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1d">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
         <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.05</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016</untitled-ontology-8:discoveryYear>
@@ -1440,8 +1553,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1e">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory"/>
         <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-16:isHabitable>
         <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.10</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016</untitled-ontology-8:discoveryYear>
@@ -1453,8 +1566,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPST-1f">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#Terrestrial"/>
-        <untitled-ontology-16:isOrbitedBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
-        <untitled-ontology-16:partOfSystem rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#La_Silla_Observatory"/>
+        <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#TRAPPIST-1"/>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
         <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.21</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016</untitled-ontology-8:discoveryYear>
@@ -1494,14 +1607,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#WhiteDwarf"/>
+        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62.7682</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.2444</untitled-ontology-16:distanceFromSunParsec>
+        <untitled-ontology-16:solarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.62</untitled-ontology-16:solarMass>
+        <untitled-ontology-16:starTemperatureK rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9552</untitled-ontology-16:starTemperatureK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#StarSystem"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661_b"/>
+        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661"/>
+        <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MilkyWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#GasGiant"/>
+        <untitled-ontology-16:discoveredBy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#Spitzer_Space_Telescope"/>
+        <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WD_0806-661"/>
+        <untitled-ontology-16:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2543</untitled-ontology-16:hasMass>
+        <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
+        <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2011</untitled-ontology-8:discoveryYear>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WOH_G64 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#WOH_G64">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OWLClass_0000022"/>
         <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#LMC"/>
-        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00016</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">163100</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50006.68733</untitled-ontology-16:distanceFromSunParsec>
         <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
-        <untitled-ontology-16:orbitalPeriodDays>UNKNOW</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-16:solarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-16:solarMass>
         <untitled-ontology-16:starLuminosity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">490000</untitled-ontology-16:starLuminosity>
         <untitled-ontology-16:starTemperatureK rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2940</untitled-ontology-16:starTemperatureK>
@@ -1921,6 +2070,40 @@
         <untitled-ontology-16:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.1</untitled-ontology-16:hasMass>
         <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2150</untitled-ontology-16:orbitalPeriodDays>
         <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2009</untitled-ontology-8:discoveryYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#NeutronStar"/>
+        <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1646.9068</untitled-ontology-16:distanceFromSun>
+        <untitled-ontology-16:distanceFromSunParsec rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">504.9331205</untitled-ontology-16:distanceFromSunParsec>
+        <untitled-ontology-16:solarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.44</untitled-ontology-16:solarMass>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#StarSystem"/>
+        <untitled-ontology-16:hasCelestialBody rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54_b"/>
+        <untitled-ontology-16:hasStar rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#SuperEarth"/>
+        <untitled-ontology-16:orbits rdf:resource="http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/untitled-ontology-8#PSR_B0329+54"/>
+        <untitled-ontology-16:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.97</untitled-ontology-16:hasMass>
+        <untitled-ontology-16:isHabitable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-16:isHabitable>
+        <untitled-ontology-16:orbitalPeriodDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10140</untitled-ontology-16:orbitalPeriodDays>
+        <untitled-ontology-8:discoveryYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2017</untitled-ontology-8:discoveryYear>
     </owl:NamedIndividual>
     
 
