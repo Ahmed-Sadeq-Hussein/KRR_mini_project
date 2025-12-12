@@ -56,11 +56,34 @@ ORDER BY ?planet ?moon
 """
 # print_query(query2)
 
+query5 = """
+SELECT ?star ?galaxy
+WHERE {
+  ?star rdf:type/rdfs:subClassOf* space:Star ;
+    space:distanceFromSunParsec ?distance ;
+    space:locatedInGalaxy ?galaxy .
+}
+ORDER BY ?distance
+LIMIT 1
+"""
+
+query6 = """
+
+"""
+
+query7 = """
+
+"""
 
 if __name__ == "__main__":
     queries = {
       "1": ("All moons in the ontology", query1),
       "2": ("Moons with planets and orbital periods", query2),
+      "3": ("Q3"),
+      "4": ("Q4"), 
+      "5": ("In what Galaxy is the furthest star from our sun?", query5),
+      "6": ("How many CelestialBodies are in Star System X?", query6),
+      "7": ("What planets in the milky way are terrestrial and are located in a star system with more than 1 star?")
       ###etc etc until 5
     }
 
@@ -68,11 +91,11 @@ if __name__ == "__main__":
       print("\n=== Space Ontology Query Menu ===")
       for num, (desc, _) in queries.items():
         print(f"{num}) {desc}")
-      print("6) Exit")
+      print("0) Exit")
       
       choice = input("\nSelect a query (1-6): ").strip()
       
-      if choice == "6":
+      if choice == "0":
         break
       elif choice in queries:
         print(f"\n--- {queries[choice][0]} ---")
