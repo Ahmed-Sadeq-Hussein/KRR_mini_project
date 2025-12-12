@@ -83,8 +83,7 @@ if __name__ == "__main__":
       "4": ("Q4"), 
       "5": ("In what Galaxy is the furthest star from our sun?", query5),
       "6": ("How many CelestialBodies are in Star System X?", query6),
-      "7": ("What planets in the milky way are terrestrial and are located in a star system with more than 1 star?")
-      ###etc etc until 5
+      "7": ("What planets in the milky way are terrestrial and are located in a star system with more than 1 star?", query7)
     }
 
     while True:
