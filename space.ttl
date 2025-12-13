@@ -1,0 +1,1650 @@
+@prefix : <http://www.semanticweb.org/mini-project-22/ontologies/2025/space/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix space: <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#> .
+@base <http://www.semanticweb.org/mini-project-22/ontologies/2025/space/> .
+
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OWLObjectProperty_0000025
+obo:OWLObjectProperty_0000025 rdf:type owl:ObjectProperty ;
+                              rdfs:range space:Constellation ;
+                              rdfs:label "partOfConstellation" .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#discovered
+space:discovered rdf:type owl:ObjectProperty ;
+                 owl:inverseOf space:discoveredBy .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#discoveredBy
+space:discoveredBy rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#hasCelestialBody
+space:hasCelestialBody rdf:type owl:ObjectProperty ;
+                       owl:inverseOf space:partOfSystem .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#hasStar
+space:hasStar rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf space:hasCelestialBody .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#hasStarSystems
+space:hasStarSystems rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     owl:inverseOf space:locatedInGalaxy .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#isOrbitedBy
+space:isOrbitedBy rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  owl:inverseOf space:orbits .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#locatedInGalaxy
+space:locatedInGalaxy rdf:type owl:ObjectProperty ;
+                      rdfs:range space:Galaxy .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#orbits
+space:orbits rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#partOfSystem
+space:partOfSystem rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#smallerThan
+space:smallerThan rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OWLDataProperty_0000020
+obo:OWLDataProperty_0000020 rdf:type owl:DatatypeProperty ;
+                            rdfs:domain owl:Thing ;
+                            rdfs:label "alsoKnownAs" .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#discoveryYear
+space:discoveryYear rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#distanceFromSun
+space:distanceFromSun rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#distanceFromSunParsec
+space:distanceFromSunParsec rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#hasMass
+space:hasMass rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#isHabitable
+space:isHabitable rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#numberOfstars
+space:numberOfstars rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#orbitalPeriodDays
+space:orbitalPeriodDays rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#solarMass
+space:solarMass rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#starLuminosity
+space:starLuminosity rdf:type owl:DatatypeProperty ;
+                     rdfs:domain space:Star .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#starTemperatureK
+space:starTemperatureK rdf:type owl:DatatypeProperty ;
+                       rdfs:domain space:Star .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OWLClass_0000009
+obo:OWLClass_0000009 rdf:type owl:Class ;
+                     rdfs:label "Celestialbody" .
+
+
+###  http://purl.obolibrary.org/obo/OWLClass_0000010
+obo:OWLClass_0000010 rdf:type owl:Class ;
+                     rdfs:subClassOf obo:OWLClass_0000009 ;
+                     rdfs:label "Planet" .
+
+
+###  http://purl.obolibrary.org/obo/OWLClass_0000022
+obo:OWLClass_0000022 rdf:type owl:Class ;
+                     rdfs:subClassOf space:Star ;
+                     rdfs:label "SuperGiant" .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#BlackHole
+space:BlackHole rdf:type owl:Class ;
+                rdfs:subClassOf obo:OWLClass_0000009 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#BrownDwarf
+space:BrownDwarf rdf:type owl:Class ;
+                 rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Constellation
+space:Constellation rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty space:hasCelestialBody ;
+                                      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                      owl:onClass space:Star
+                                    ] .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#DwarfPlanet
+space:DwarfPlanet rdf:type owl:Class ;
+                  rdfs:subClassOf obo:OWLClass_0000009 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Galaxy
+space:Galaxy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#GasGiant
+space:GasGiant rdf:type owl:Class ;
+               rdfs:subClassOf obo:OWLClass_0000010 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#GroundObservatory
+space:GroundObservatory rdf:type owl:Class ;
+                        rdfs:subClassOf space:Observatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#IceGiant
+space:IceGiant rdf:type owl:Class ;
+               rdfs:subClassOf obo:OWLClass_0000010 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#MainSequenceStar
+space:MainSequenceStar rdf:type owl:Class ;
+                       rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Moon
+space:Moon rdf:type owl:Class ;
+           rdfs:subClassOf obo:OWLClass_0000009 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#NeptuneLike
+space:NeptuneLike rdf:type owl:Class ;
+                  rdfs:subClassOf obo:OWLClass_0000010 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#NeutronStar
+space:NeutronStar rdf:type owl:Class ;
+                  rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Observatory
+space:Observatory rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#RedDwarf
+space:RedDwarf rdf:type owl:Class ;
+               rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#RedGiant
+space:RedGiant rdf:type owl:Class ;
+               rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#SpaceObservatory
+space:SpaceObservatory rdf:type owl:Class ;
+                       rdfs:subClassOf space:Observatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Star
+space:Star rdf:type owl:Class ;
+           rdfs:subClassOf obo:OWLClass_0000009 ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty space:orbits ;
+                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                 owl:unionOf ( space:BlackHole
+                                                               space:Star
+                                                             )
+                                               ]
+                           ] .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#StarSystem
+space:StarSystem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#SuperEarth
+space:SuperEarth rdf:type owl:Class ;
+                 rdfs:subClassOf obo:OWLClass_0000010 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Terrestrial
+space:Terrestrial rdf:type owl:Class ;
+                  rdfs:subClassOf obo:OWLClass_0000010 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Unknown
+space:Unknown rdf:type owl:Class ;
+              rdfs:subClassOf obo:OWLClass_0000010 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#WhiteDwarf
+space:WhiteDwarf rdf:type owl:Class ;
+                 rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#G-typeSubgiant
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#G-typeSubgiant> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#GammaDoradus
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#GammaDoradus> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#OrangeDwarf
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#OrangeDwarf> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowDwarf
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowDwarf> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf space:Star .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowGiant
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowGiant> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf space:Star .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000011
+obo:OWLNamedIndividual_0000011 rdf:type owl:NamedIndividual ,
+                                        space:BlackHole ;
+                               space:locatedInGalaxy space:MilkyWay ;
+                               space:distanceFromSun 26000 ;
+                               rdfs:label "Sagittarius A*" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000012
+obo:OWLNamedIndividual_0000012 rdf:type owl:NamedIndividual ,
+                                        space:BlackHole ;
+                               space:locatedInGalaxy space:MilkyWay ;
+                               space:partOfSystem obo:OWLNamedIndividual_0000014 ;
+                               space:distanceFromSun 1560 ;
+                               rdfs:label "Gaia BH1 A" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000013
+obo:OWLNamedIndividual_0000013 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               space:locatedInGalaxy space:MilkyWay ;
+                               space:partOfSystem obo:OWLNamedIndividual_0000014 ;
+                               space:distanceFromSun 1560 ;
+                               rdfs:label "Gaia BH1 B" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000014
+obo:OWLNamedIndividual_0000014 rdf:type owl:NamedIndividual ,
+                                        space:StarSystem ;
+                               space:hasStar obo:OWLNamedIndividual_0000012 ,
+                                             obo:OWLNamedIndividual_0000013 ;
+                               space:numberOfstars 2 ;
+                               rdfs:label "Gaia BH1" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000015
+obo:OWLNamedIndividual_0000015 rdf:type owl:NamedIndividual ,
+                                        space:StarSystem ;
+                               space:hasStar obo:OWLNamedIndividual_0000016 ,
+                                             obo:OWLNamedIndividual_0000017 ,
+                                             obo:OWLNamedIndividual_0000018 ;
+                               space:locatedInGalaxy space:MilkyWay ;
+                               space:distanceFromSun 4.37 ;
+                               space:numberOfstars 3 ;
+                               rdfs:label "Alpha Centauri" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000016
+obo:OWLNamedIndividual_0000016 rdf:type owl:NamedIndividual ,
+                                        space:RedDwarf ;
+                               space:partOfSystem obo:OWLNamedIndividual_0000015 ;
+                               space:distanceFromSun 4.37 ;
+                               rdfs:label "Proxima Centauri" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000017
+obo:OWLNamedIndividual_0000017 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               space:isOrbitedBy obo:OWLNamedIndividual_0000016 ;
+                               space:partOfSystem obo:OWLNamedIndividual_0000015 ;
+                               obo:OWLDataProperty_0000020 "Rigil Kentaurus" ;
+                               space:distanceFromSun 4.37 ;
+                               space:solarMass "1.11"^^xsd:double ;
+                               space:starTemperatureK 5776 ;
+                               rdfs:label "Alpha Centauri A" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000018
+obo:OWLNamedIndividual_0000018 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               space:isOrbitedBy obo:OWLNamedIndividual_0000016 ;
+                               space:smallerThan obo:OWLNamedIndividual_0000017 ;
+                               obo:OWLDataProperty_0000020 "Toliman" ;
+                               space:distanceFromSun 4.37 ;
+                               space:solarMass 0.94 ;
+                               space:starTemperatureK 5244 ;
+                               rdfs:label "Alpha Centauri B" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000019
+obo:OWLNamedIndividual_0000019 rdf:type owl:NamedIndividual ,
+                                        space:SuperEarth ;
+                               space:orbits obo:OWLNamedIndividual_0000016 ;
+                               space:partOfSystem obo:OWLNamedIndividual_0000015 ;
+                               space:discoveryYear 2016 ;
+                               space:hasMass 1.055 ;
+                               space:orbitalPeriodDays 11.2 ;
+                               rdfs:label "Proxima Centauri b" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000021
+obo:OWLNamedIndividual_0000021 rdf:type owl:NamedIndividual ,
+                                        space:Terrestrial ;
+                               space:orbits obo:OWLNamedIndividual_0000016 ;
+                               space:partOfSystem obo:OWLNamedIndividual_0000015 ;
+                               space:discoveryYear 2025 ;
+                               space:hasMass 0.26 ;
+                               space:orbitalPeriodDays 5.1 ;
+                               rdfs:label "Proxima Centauri d" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000023
+obo:OWLNamedIndividual_0000023 rdf:type owl:NamedIndividual ,
+                                        obo:OWLClass_0000022 ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               obo:OWLDataProperty_0000020 "Al Jabhah" ;
+                               space:distanceFromSun 1269 ;
+                               space:starLuminosity 6793 ;
+                               space:starTemperatureK 7253 ;
+                               rdfs:label "Eta Leonis" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000024
+obo:OWLNamedIndividual_0000024 rdf:type owl:NamedIndividual ,
+                                        space:Constellation ;
+                               space:locatedInGalaxy space:MilkyWay ;
+                               rdfs:label "Leo" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000026
+obo:OWLNamedIndividual_0000026 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               obo:OWLDataProperty_0000020 "Alpha Leonis" ;
+                               space:distanceFromSun 79 ;
+                               space:starTemperatureK 12000 ;
+                               rdfs:label "Regulus" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000028
+obo:OWLNamedIndividual_0000028 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               obo:OWLDataProperty_0000020 "Beta Leonis" ;
+                               space:distanceFromSun 36 ;
+                               space:starTemperatureK 8500 ;
+                               rdfs:label "Denebola" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000029
+obo:OWLNamedIndividual_0000029 rdf:type owl:NamedIndividual ,
+                                        space:RedGiant ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 126 ;
+                               space:starTemperatureK 4500 ;
+                               rdfs:label "Algieba" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000030
+obo:OWLNamedIndividual_0000030 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 126 ;
+                               space:starTemperatureK 8500 ;
+                               rdfs:label "Zosma" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000031
+obo:OWLNamedIndividual_0000031 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 165 ;
+                               space:starTemperatureK 9400 ;
+                               rdfs:label "Chertan" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000032
+obo:OWLNamedIndividual_0000032 rdf:type owl:NamedIndividual ,
+                                        space:RedGiant ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 260 ;
+                               space:starTemperatureK 6800 ;
+                               rdfs:label "Adhefera" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000034
+obo:OWLNamedIndividual_0000034 rdf:type owl:NamedIndividual ,
+                                        space:RedGiant ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 247 ;
+                               space:starTemperatureK 4550 ;
+                               rdfs:label "Algenubi" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000036
+obo:OWLNamedIndividual_0000036 rdf:type owl:NamedIndividual ,
+                                        space:RedGiant ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 124 ;
+                               space:starTemperatureK 4200 ;
+                               rdfs:label "Ras Elased Borealis" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000038
+obo:OWLNamedIndividual_0000038 rdf:type owl:NamedIndividual ,
+                                        space:RedGiant ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 203 ;
+                               space:starTemperatureK 4100 ;
+                               rdfs:label "Alterf" .
+
+
+###  http://purl.obolibrary.org/obo/OWLNamedIndividual_0000039
+obo:OWLNamedIndividual_0000039 rdf:type owl:NamedIndividual ,
+                                        space:MainSequenceStar ;
+                               obo:OWLObjectProperty_0000025 obo:OWLNamedIndividual_0000024 ;
+                               space:distanceFromSun 135 ;
+                               space:starTemperatureK 5400 ;
+                               rdfs:label "Subra" .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Acuario
+space:Acuario rdf:type owl:NamedIndividual ,
+                       space:Constellation ;
+              space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Alnilam
+space:Alnilam rdf:type owl:NamedIndividual ,
+                       obo:OWLClass_0000022 ;
+              obo:OWLObjectProperty_0000025 space:Orion ;
+              obo:OWLDataProperty_0000020 "Epsilon Orionis" ;
+              space:distanceFromSun 1250 ;
+              space:isHabitable "false"^^xsd:boolean ;
+              space:solarMass 28 ;
+              space:starLuminosity 0.00271 ;
+              space:starTemperatureK 25000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Andromeda
+space:Andromeda rdf:type owl:NamedIndividual ,
+                         space:Galaxy ;
+                obo:OWLDataProperty_0000020 "Messier 31" ;
+                space:discoveryYear 964 ;
+                space:distanceFromSun 2.540000 ;
+                space:numberOfstars 1.000000000000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Asaph_Hall
+space:Asaph_Hall rdf:type owl:NamedIndividual ,
+                          space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#BD-17_63
+space:BD-17_63 rdf:type owl:NamedIndividual ,
+                        space:BrownDwarf ;
+               space:distanceFromSun 112.3969 ;
+               space:distanceFromSunParsec 34.4603 ;
+               space:solarMass 0.741 ;
+               space:starLuminosity -0.6514099 ;
+               space:starTemperatureK 4665 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#BD-17_63_System
+space:BD-17_63_System rdf:type owl:NamedIndividual ,
+                               space:StarSystem ;
+                      space:hasCelestialBody space:BD-17_63_b ;
+                      space:hasStar space:BD-17_63 ;
+                      space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#BD-17_63_b
+space:BD-17_63_b rdf:type owl:NamedIndividual ,
+                          space:GasGiant ;
+                 space:discoveredBy space:La_Silla_Observatory ;
+                 space:orbits space:BD-17_63 ;
+                 space:discoveryYear 2008 ;
+                 space:hasMass 1640 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:orbitalPeriodDays 655.57 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Betelgeuse
+space:Betelgeuse rdf:type owl:NamedIndividual ,
+                          obo:OWLClass_0000022 ;
+                 obo:OWLObjectProperty_0000025 space:Orion ;
+                 obo:OWLDataProperty_0000020 "Alpha Orionis; HD 39801; HR 2061" ;
+                 space:distanceFromSun 550 ;
+                 space:distanceFromSunParsec 170 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:solarMass 14 ;
+                 space:starLuminosity 65000 ;
+                 space:starTemperatureK 3500 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Ceres
+space:Ceres rdf:type owl:NamedIndividual ,
+                     space:DwarfPlanet ;
+            space:discoveredBy space:Giuseppe_Piazzi ;
+            space:orbits space:Sun ;
+            space:distanceFromSun 0.0000437 ;
+            space:hasMass 0.00016 ;
+            space:isHabitable "false"^^xsd:boolean ;
+            space:orbitalPeriodDays 1682 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Charon
+space:Charon rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:United_States_Naval_Observatory ;
+             space:orbits space:Pluto ;
+             space:distanceFromSun 0.0006 ;
+             space:hasMass 0.000266 ;
+             space:orbitalPeriodDays 6.387 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Christiaan_Huygens
+space:Christiaan_Huygens rdf:type owl:NamedIndividual ,
+                                  space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Clyde_Tombaugh
+space:Clyde_Tombaugh rdf:type owl:NamedIndividual ,
+                              space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Deimos
+space:Deimos rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:Asaph_Hall ;
+             space:orbits space:Mars ;
+             space:distanceFromSun 0.000024 ;
+             space:hasMass 0.0000000003012 ;
+             space:orbitalPeriodDays 1.26 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Dione
+space:Dione rdf:type owl:NamedIndividual ,
+                     space:Moon ;
+            space:discoveredBy space:Giovanni_Domenico_Cassini ;
+            space:orbits space:Saturn ;
+            space:distanceFromSun 0.00014 ;
+            space:hasMass 0.000183 ;
+            space:orbitalPeriodDays 2.75 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Earth
+space:Earth rdf:type owl:NamedIndividual ,
+                     space:Terrestrial ;
+            space:orbits space:Sun ;
+            space:distanceFromSun 0.000015584 ;
+            space:hasMass 1 ;
+            space:isHabitable "true"^^xsd:boolean ;
+            space:orbitalPeriodDays 365.256 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Eris
+space:Eris rdf:type owl:NamedIndividual ,
+                    space:DwarfPlanet ;
+           space:discoveredBy space:Palomar_Observatory ;
+           space:orbits space:Sun ;
+           space:distanceFromSun 0.00107527347 ;
+           space:hasMass 0.00278 ;
+           space:orbitalPeriodDays 203500 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Europa
+space:Europa rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:Galileo_Galilei ;
+             space:orbits space:Jupiter ;
+             space:distanceFromSun 0.000082332 ;
+             space:hasMass 0.008 ;
+             space:orbitalPeriodDays 3.55 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Galileo_Galilei
+space:Galileo_Galilei rdf:type owl:NamedIndividual ,
+                               space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Ganymede
+space:Ganymede rdf:type owl:NamedIndividual ,
+                        space:Moon ;
+               space:discoveredBy space:Galileo_Galilei ;
+               space:orbits space:Jupiter ;
+               space:distanceFromSun 0.0000823 ;
+               space:hasMass 0.025 ;
+               space:orbitalPeriodDays 7.15 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Gerard_Kuiper
+space:Gerard_Kuiper rdf:type owl:NamedIndividual ,
+                             space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Giovanni_Domenico_Cassini
+space:Giovanni_Domenico_Cassini rdf:type owl:NamedIndividual ,
+                                         space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Giuseppe_Piazzi
+space:Giuseppe_Piazzi rdf:type owl:NamedIndividual ,
+                               space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Haumea
+space:Haumea rdf:type owl:NamedIndividual ,
+                      space:DwarfPlanet ;
+             space:discoveredBy space:Palomar_Observatory ;
+             space:orbits space:Sun ;
+             space:distanceFromSun 0.000007 ;
+             space:hasMass 0.0007 ;
+             space:orbitalPeriodDays 103410 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Hubble_Space_Telescope
+space:Hubble_Space_Telescope rdf:type owl:NamedIndividual ,
+                                      space:SpaceObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Iapetus
+space:Iapetus rdf:type owl:NamedIndividual ,
+                       space:Moon ;
+              space:discoveredBy space:Giovanni_Domenico_Cassini ;
+              space:orbits space:Saturn ;
+              space:distanceFromSun 0.0000356 ;
+              space:hasMass 0.0003 ;
+              space:orbitalPeriodDays 79.3 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Io
+space:Io rdf:type owl:NamedIndividual ,
+                  space:Moon ;
+         space:discoveredBy space:Galileo_Galilei ;
+         space:orbits space:Jupiter ;
+         space:distanceFromSun 0.000082 ;
+         space:hasMass 0.015 ;
+         space:orbitalPeriodDays 1.77 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Jupiter
+space:Jupiter rdf:type owl:NamedIndividual ,
+                       space:GasGiant ;
+              space:discoveredBy space:Galileo_Galilei ;
+              space:orbits space:Sun ;
+              space:distanceFromSun 0.0000823 ;
+              space:hasMass 318 ;
+              space:isHabitable "false"^^xsd:boolean ;
+              space:orbitalPeriodDays 4333 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Kepler
+space:Kepler rdf:type owl:NamedIndividual ,
+                      space:SpaceObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Kepler-452
+space:Kepler-452 rdf:type owl:NamedIndividual ,
+                          space:MainSequenceStar ;
+                 space:distanceFromSun 1799.5312 ;
+                 space:distanceFromSunParsec 551.727 ;
+                 space:solarMass 1.022000 ;
+                 space:starLuminosity 0.084479400 ;
+                 space:starTemperatureK 5728 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Kepler-452_System
+space:Kepler-452_System rdf:type owl:NamedIndividual ,
+                                 space:StarSystem ;
+                        space:hasCelestialBody space:Kepler-452_b ;
+                        space:hasStar space:Kepler-452 ;
+                        space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Kepler-452_b
+space:Kepler-452_b rdf:type owl:NamedIndividual ,
+                            space:SuperEarth ;
+                   space:discoveredBy space:Kepler ;
+                   space:orbits space:Kepler-452 ;
+                   space:discoveryYear 2015 ;
+                   space:isHabitable "true"^^xsd:boolean ;
+                   space:orbitalPeriodDays 384.843 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#LMC
+space:LMC rdf:type owl:NamedIndividual ,
+                   space:Galaxy ;
+          obo:OWLDataProperty_0000020 "Large Mellanic Cloud" .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#La_Silla_Observatory
+space:La_Silla_Observatory rdf:type owl:NamedIndividual ,
+                                    space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#M31-TSG1
+space:M31-TSG1 rdf:type owl:NamedIndividual ,
+                        space:StarSystem ;
+               space:discovered space:Hubble_Space_Telescope ;
+               space:locatedInGalaxy space:Andromeda ;
+               space:distanceFromSun 2540000 ;
+               space:distanceFromSunParsec 778767.54027 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Makemake
+space:Makemake rdf:type owl:NamedIndividual ,
+                        space:DwarfPlanet ;
+               space:discoveredBy space:Palomar_Observatory ;
+               space:orbits space:Sun ;
+               space:distanceFromSun 0.000724228308 ;
+               space:hasMass 0.00045 ;
+               space:orbitalPeriodDays 111690 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Mars
+space:Mars rdf:type owl:NamedIndividual ,
+                    space:Terrestrial ;
+           space:discoveredBy space:Mars ;
+           space:orbits space:Sun ;
+           space:distanceFromSun 0.000023222 ;
+           space:hasMass 0.107 ;
+           space:isHabitable "false"^^xsd:boolean ;
+           space:orbitalPeriodDays 687 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Mercury
+space:Mercury rdf:type owl:NamedIndividual ,
+                       space:Terrestrial ;
+              space:discoveredBy space:Mercury ;
+              space:orbits space:Sun ;
+              space:distanceFromSun 0.0000053998 ;
+              space:hasMass 0.055 ;
+              space:isHabitable "false"^^xsd:boolean ;
+              space:orbitalPeriodDays 88 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#MilkyWay
+space:MilkyWay rdf:type owl:NamedIndividual ,
+                        space:Galaxy ;
+               space:hasStarSystems obo:OWLNamedIndividual_0000015 ,
+                                    space:SolarSystem .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Moon
+space:Moon rdf:type owl:NamedIndividual ,
+                    space:Moon ;
+           space:orbits space:Earth ;
+           space:distanceFromSun 0.00000004 ;
+           space:hasMass 0.01234567 ;
+           space:orbitalPeriodDays 27.3 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Namaka
+space:Namaka rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:W._M._Keck_Observatory ;
+             space:orbits space:Haumea ;
+             space:distanceFromSun 0.000007 ;
+             space:hasMass 0.0000003 ;
+             space:orbitalPeriodDays 18.2783 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Neptune
+space:Neptune rdf:type owl:NamedIndividual ,
+                       space:IceGiant ;
+              space:discoveredBy space:Urbain_Le_Verrier ;
+              space:orbits space:Sun ;
+              space:distanceFromSun 0.00047252 ;
+              space:hasMass 17.15 ;
+              space:isHabitable "false"^^xsd:boolean ;
+              space:orbitalPeriodDays 60195 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Nereid
+space:Nereid rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:Gerard_Kuiper ;
+             space:orbits space:Neptune ;
+             space:distanceFromSun 0.000037 ;
+             space:hasMass 0.00519 ;
+             space:orbitalPeriodDays 360.14 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Oberon
+space:Oberon rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:William_Herschel ;
+             space:orbits space:Uranus ;
+             space:distanceFromSun 0.000316256903 ;
+             space:hasMass 0.0005 ;
+             space:orbitalPeriodDays 13 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Orion
+space:Orion rdf:type owl:NamedIndividual ,
+                     space:Constellation ;
+            space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Palomar_Observatory
+space:Palomar_Observatory rdf:type owl:NamedIndividual ,
+                                   space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Phobos
+space:Phobos rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:Asaph_Hall ;
+             space:orbits space:Mars ;
+             space:distanceFromSun 0.0000152 ;
+             space:hasMass 0.00000000178 ;
+             space:orbitalPeriodDays 0.319 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Pluto
+space:Pluto rdf:type owl:NamedIndividual ,
+                     space:DwarfPlanet ;
+            space:discoveredBy space:Clyde_Tombaugh ;
+            space:orbits space:Sun ;
+            space:distanceFromSun 0.0006 ;
+            space:hasMass 0.002 ;
+            space:isHabitable "false"^^xsd:boolean ;
+            space:orbitalPeriodDays 90560 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Proteus
+space:Proteus rdf:type owl:NamedIndividual ,
+                       space:Moon ;
+              space:discoveredBy space:Voyager_2 ;
+              space:orbits space:Neptune ;
+              space:distanceFromSun 0.000475 ;
+              space:hasMass 0.00000737 ;
+              space:orbitalPeriodDays 1.125 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Rhea
+space:Rhea rdf:type owl:NamedIndividual ,
+                    space:Moon ;
+           space:discoveredBy space:Giovanni_Domenico_Cassini ;
+           space:orbits space:Saturn ;
+           space:distanceFromSun 0.00015 ;
+           space:hasMass 0.00039 ;
+           space:orbitalPeriodDays 4.5 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Rigel
+space:Rigel rdf:type owl:NamedIndividual ,
+                     obo:OWLClass_0000022 ;
+            obo:OWLObjectProperty_0000025 space:Orion ;
+            obo:OWLDataProperty_0000020 "Beta Orionis" ;
+            space:distanceFromSun 848 ;
+            space:distanceFromSunParsec 260 ;
+            space:isHabitable "false"^^xsd:boolean ;
+            space:solarMass 18 ;
+            space:starTemperatureK 11000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Saturn
+space:Saturn rdf:type owl:NamedIndividual ,
+                      space:GasGiant ;
+             space:discoveredBy space:Galileo_Galilei ;
+             space:orbits space:Sun ;
+             space:distanceFromSun 0.00015061 ;
+             space:hasMass 95.16 ;
+             space:isHabitable "false"^^xsd:boolean ;
+             space:orbitalPeriodDays 10756 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#SolarSystem
+space:SolarSystem rdf:type owl:NamedIndividual ,
+                           space:StarSystem ;
+                  space:hasCelestialBody space:Ceres ,
+                                         space:Charon ,
+                                         space:Deimos ,
+                                         space:Dione ,
+                                         space:Earth ,
+                                         space:Eris ,
+                                         space:Europa ,
+                                         space:Ganymede ,
+                                         space:Haumea ,
+                                         space:Iapetus ,
+                                         space:Io ,
+                                         space:Jupiter ,
+                                         space:Makemake ,
+                                         space:Mars ,
+                                         space:Mercury ,
+                                         space:Namaka ,
+                                         space:Neptune ,
+                                         space:Nereid ,
+                                         space:Oberon ,
+                                         space:Phobos ,
+                                         space:Pluto ,
+                                         space:Proteus ,
+                                         space:Rhea ,
+                                         space:Saturn ,
+                                         space:Titan ,
+                                         space:Titania ,
+                                         space:Triton ,
+                                         space:Uranus ,
+                                         space:Venus ;
+                  space:hasStar space:Sun .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Spitzer_Space_Telescope
+space:Spitzer_Space_Telescope rdf:type owl:NamedIndividual ,
+                                       space:SpaceObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Sun
+space:Sun rdf:type owl:NamedIndividual ,
+                   space:MainSequenceStar .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPIST-1
+space:TRAPPIST-1 rdf:type owl:NamedIndividual ,
+                          space:RedDwarf ;
+                 obo:OWLObjectProperty_0000025 space:Acuario ;
+                 space:isOrbitedBy space:TRAPPST-1b ;
+                 space:partOfSystem space:TRAPPIST-1_System ;
+                 space:discoveryYear 2000 ;
+                 space:distanceFromSun 40.6 ;
+                 space:distanceFromSunParsec 12.5 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:starLuminosity 0.000555 ;
+                 space:starTemperatureK 2566 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPIST-1_System
+space:TRAPPIST-1_System rdf:type owl:NamedIndividual ,
+                                 space:StarSystem ;
+                        space:hasCelestialBody space:TRAPPST-1b ,
+                                               space:TRAPPST-1c ,
+                                               space:TRAPPST-1d ,
+                                               space:TRAPPST-1e ,
+                                               space:TRAPPST-1f ;
+                        space:hasStar space:TRAPPIST-1 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPST-1b
+space:TRAPPST-1b rdf:type owl:NamedIndividual ,
+                          space:SuperEarth ;
+                 space:discoveredBy space:La_Silla_Observatory ;
+                 space:orbits space:TRAPPIST-1 ;
+                 space:discoveryYear 2016 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:orbitalPeriodDays 1.51 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPST-1c
+space:TRAPPST-1c rdf:type owl:NamedIndividual ,
+                          space:SuperEarth ;
+                 space:discoveredBy space:La_Silla_Observatory ;
+                 space:orbits space:TRAPPIST-1 ;
+                 space:discoveryYear 2016 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:orbitalPeriodDays 2.42 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPST-1d
+space:TRAPPST-1d rdf:type owl:NamedIndividual ,
+                          space:Terrestrial ;
+                 space:discoveredBy space:La_Silla_Observatory ;
+                 space:orbits space:TRAPPIST-1 ;
+                 space:discoveryYear 2016 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:orbitalPeriodDays 4.05 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPST-1e
+space:TRAPPST-1e rdf:type owl:NamedIndividual ,
+                          space:Terrestrial ;
+                 space:discoveredBy space:La_Silla_Observatory ;
+                 space:orbits space:TRAPPIST-1 ;
+                 space:discoveryYear 2016 ;
+                 space:isHabitable "true"^^xsd:boolean ;
+                 space:orbitalPeriodDays 6.10 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#TRAPPST-1f
+space:TRAPPST-1f rdf:type owl:NamedIndividual ,
+                          space:Terrestrial ;
+                 space:discoveredBy space:La_Silla_Observatory ;
+                 space:orbits space:TRAPPIST-1 ;
+                 space:discoveryYear 2016 ;
+                 space:isHabitable "false"^^xsd:boolean ;
+                 space:orbitalPeriodDays 9.21 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Titan
+space:Titan rdf:type owl:NamedIndividual ,
+                     space:Moon ;
+            space:discoveredBy space:Christiaan_Huygens ;
+            space:orbits space:Saturn ;
+            space:distanceFromSun 0.0013 ;
+            space:hasMass 0.0225 ;
+            space:orbitalPeriodDays 15.945 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Titania
+space:Titania rdf:type owl:NamedIndividual ,
+                       space:Moon ;
+              space:discoveredBy space:William_Herschel ;
+              space:orbits space:Uranus ;
+              space:distanceFromSun 0.0003 ;
+              space:hasMass 0.00059 ;
+              space:orbitalPeriodDays 8.71 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Triton
+space:Triton rdf:type owl:NamedIndividual ,
+                      space:Moon ;
+             space:discoveredBy space:William_Lassell ;
+             space:orbits space:Neptune ;
+             space:distanceFromSun 0.0003 ;
+             space:hasMass 0.00358 ;
+             space:orbitalPeriodDays 5.877 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#United_States_Naval_Observatory
+space:United_States_Naval_Observatory rdf:type owl:NamedIndividual ,
+                                               space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Uranus
+space:Uranus rdf:type owl:NamedIndividual ,
+                      space:IceGiant ;
+             space:discoveredBy space:William_Herschel ;
+             space:orbits space:Sun ;
+             space:distanceFromSun 0.00030816 ;
+             space:hasMass 14.54 ;
+             space:isHabitable "false"^^xsd:boolean ;
+             space:orbitalPeriodDays 30688.5 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Urbain_Le_Verrier
+space:Urbain_Le_Verrier rdf:type owl:NamedIndividual ,
+                                 space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Venus
+space:Venus rdf:type owl:NamedIndividual ,
+                     space:Terrestrial ;
+            space:discoveredBy space:Galileo_Galilei ;
+            space:orbits space:Sun ;
+            space:distanceFromSun 0.000011453 ;
+            space:hasMass 0.815 ;
+            space:isHabitable "false"^^xsd:boolean ;
+            space:orbitalPeriodDays 225 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Voyager_2
+space:Voyager_2 rdf:type owl:NamedIndividual ,
+                         space:SpaceObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#W._M._Keck_Observatory
+space:W._M._Keck_Observatory rdf:type owl:NamedIndividual ,
+                                      space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#WD_0806-661
+space:WD_0806-661 rdf:type owl:NamedIndividual ,
+                           space:WhiteDwarf ;
+                  space:distanceFromSun 62.7682 ;
+                  space:distanceFromSunParsec 19.2444 ;
+                  space:solarMass 0.62 ;
+                  space:starTemperatureK 9552 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#WD_0806-661_System
+space:WD_0806-661_System rdf:type owl:NamedIndividual ,
+                                  space:StarSystem ;
+                         space:hasCelestialBody space:WD_0806-661_b ;
+                         space:hasStar space:WD_0806-661 ;
+                         space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#WD_0806-661_b
+space:WD_0806-661_b rdf:type owl:NamedIndividual ,
+                             space:GasGiant ;
+                    space:discoveredBy space:Spitzer_Space_Telescope ;
+                    space:orbits space:WD_0806-661 ;
+                    space:discoveryYear 2011 ;
+                    space:hasMass 2543 ;
+                    space:isHabitable "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#WOH_G64
+space:WOH_G64 rdf:type owl:NamedIndividual ,
+                       obo:OWLClass_0000022 ;
+              space:locatedInGalaxy space:LMC ;
+              space:discoveryYear 1970 ;
+              space:distanceFromSun 163100 ;
+              space:distanceFromSunParsec 50006.68733 ;
+              space:isHabitable "false"^^xsd:boolean ;
+              space:solarMass 25 ;
+              space:starLuminosity 490000 ;
+              space:starTemperatureK 2940 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#William_Herschel
+space:William_Herschel rdf:type owl:NamedIndividual ,
+                                space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#William_Lassell
+space:William_Lassell rdf:type owl:NamedIndividual ,
+                               space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#Xinglong_Station
+space:Xinglong_Station rdf:type owl:NamedIndividual ,
+                                space:GroundObservatory .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com> rdf:type owl:NamedIndividual ,
+                                                                                   space:RedGiant ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_b> ;
+                                                                          space:distanceFromSunParsec 93.1846 ;
+                                                                          space:solarMass 2.09 ;
+                                                                          space:starLuminosity 1.9782 ;
+                                                                          space:starTemperatureK 4874 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_System
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_System> rdf:type owl:NamedIndividual ,
+                                                                                          space:StarSystem ;
+                                                                                 space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_b> ;
+                                                                                 space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com> ;
+                                                                                 space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:discoveredBy space:Xinglong_Station ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com> ;
+                                                                            space:partOfSystem <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_Com_System> ;
+                                                                            space:discoveryYear 2007 ;
+                                                                            space:hasMass 4914.9 ;
+                                                                            space:orbitalPeriodDays 323.21 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi> rdf:type owl:NamedIndividual ,
+                                                                                   space:RedGiant ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi_b> ;
+                                                                          space:distanceFromSunParsec 125.3210 ;
+                                                                          space:solarMass 2.78 ;
+                                                                          space:starLuminosity 2.4295144 ;
+                                                                          space:starTemperatureK 4263.7700 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi> ;
+                                                                            space:partOfSystem <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#11_UMi_System> ;
+                                                                            space:discoveryYear 2009 ;
+                                                                            space:hasMass 4685 ;
+                                                                            space:orbitalPeriodDays 516.22 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And> rdf:type owl:NamedIndividual ,
+                                                                                   space:RedGiant ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And_b> ;
+                                                                          space:distanceFromSunParsec 75.4392 ;
+                                                                          space:solarMass 1.78 ;
+                                                                          space:starLuminosity 1.840 ;
+                                                                          space:starTemperatureK 4888 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And> ;
+                                                                            space:discoveryYear 2008 ;
+                                                                            space:hasMass 1131 ;
+                                                                            space:orbitalPeriodDays 186.76 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#OrangeDwarf> ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her_b> ;
+                                                                          space:distanceFromSunParsec 17.9323 ;
+                                                                          space:solarMass 0.9100 ;
+                                                                          space:starLuminosity -0.1527280 ;
+                                                                          space:starTemperatureK 5314.9419436850 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:discoveredBy space:W._M._Keck_Observatory ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her> ;
+                                                                            space:partOfSystem <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#14_Her_System> ;
+                                                                            space:discoveryYear 2002 ;
+                                                                            space:hasMass 2559 ;
+                                                                            space:orbitalPeriodDays 1765.03890 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowDwarf> ;
+                                                                            space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B_b> ;
+                                                                            space:distanceFromSunParsec 21.1397 ;
+                                                                            space:solarMass 1.08 ;
+                                                                            space:starLuminosity 0.097285776 ;
+                                                                            space:starTemperatureK 5711.967005310000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B_b> rdf:type owl:NamedIndividual ,
+                                                                                       space:GasGiant ;
+                                                                              space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B> ;
+                                                                              space:discoveryYear 1996 ;
+                                                                              space:hasMass 566 ;
+                                                                              space:orbitalPeriodDays 798.5 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco> rdf:type owl:NamedIndividual ,
+                                                                                   space:RedGiant ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco_b> ;
+                                                                          space:distanceFromSunParsec 124.953 ;
+                                                                          space:solarMass 1.22 ;
+                                                                          space:starLuminosity 2.2544 ;
+                                                                          space:starTemperatureK 4157 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:Unknown ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco> ;
+                                                                            space:partOfSystem <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco> ;
+                                                                            space:discoveryYear 2020 ;
+                                                                            space:hasMass 1373 ;
+                                                                            space:orbitalPeriodDays 578.38 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowGiant> ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del_b> ;
+                                                                          space:distanceFromSunParsec 76.2220 ;
+                                                                          space:solarMass 2.1 ;
+                                                                          space:starLuminosity 1.634 ;
+                                                                          space:starTemperatureK 4980 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del> ;
+                                                                            space:discoveryYear 2008 ;
+                                                                            space:hasMass 2926 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo> rdf:type owl:NamedIndividual ,
+                                                                                   space:RedGiant ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo_b> ;
+                                                                          space:distanceFromSunParsec 95.98630 ;
+                                                                          space:solarMass 0.990 ;
+                                                                          space:starLuminosity 1.877 ;
+                                                                          space:starTemperatureK 4816 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ,
+                                                                                     space:Unknown ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo> ;
+                                                                            space:discoveryYear 2018 ;
+                                                                            space:hasMass 281 ;
+                                                                            space:orbitalPeriodDays 30.3506 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#G-typeSubgiant> ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex_b> ;
+                                                                          space:distanceFromSunParsec 72.0691 ;
+                                                                          space:solarMass 1.54 ;
+                                                                          space:starLuminosity 1.1508761 ;
+                                                                          space:starTemperatureK 5027.0 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex> ;
+                                                                            space:discoveryYear 2010 ;
+                                                                            space:hasMass 632.46 ;
+                                                                            space:orbitalPeriodDays 452.8 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa> rdf:type owl:NamedIndividual ,
+                                                                                  space:RedGiant ;
+                                                                         space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa_b> ;
+                                                                         space:distanceFromSunParsec 73.46030 ;
+                                                                         space:solarMass 1.234 ;
+                                                                         space:starLuminosity 2.0623594 ;
+                                                                         space:starTemperatureK 4482.90000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa_b> rdf:type owl:NamedIndividual ,
+                                                                                    space:GasGiant ;
+                                                                           space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa> ;
+                                                                           space:discoveryYear 2006 ;
+                                                                           space:hasMass 2511 ;
+                                                                           space:orbitalPeriodDays 270.27 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#GammaDoradus> ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri_b> ;
+                                                                          space:distanceFromSunParsec 29.7575 ;
+                                                                          space:solarMass 1.75 ;
+                                                                          space:starLuminosity 0.7515689 ;
+                                                                          space:starTemperatureK 7276 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri> ;
+                                                                            space:discoveryYear 2015 ;
+                                                                            space:hasMass 3464 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowDwarf> ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg_b> ;
+                                                                          space:distanceFromSunParsec 15.4614 ;
+                                                                          space:solarMass 1.06929608102 ;
+                                                                          space:starLuminosity 15.4614 ;
+                                                                          space:starTemperatureK 5760.76290103000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:GasGiant ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg> ;
+                                                                            space:discoveryYear 1995 ;
+                                                                            space:hasMass 146 ;
+                                                                            space:orbitalPeriodDays 4.2307969 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B> rdf:type owl:NamedIndividual ,
+                                                                                     space:RedDwarf ;
+                                                                            space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B_b> ;
+                                                                            space:distanceFromSunParsec 12.4773 ;
+                                                                            space:solarMass 0.26 ;
+                                                                            space:starLuminosity -2.1081 ;
+                                                                            space:starTemperatureK 3286 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B_b> rdf:type owl:NamedIndividual ,
+                                                                                       space:GasGiant ;
+                                                                              space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B> ;
+                                                                              space:discoveryYear 2025 ;
+                                                                              space:hasMass 3.5 ;
+                                                                              space:orbitalPeriodDays 6.7994 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn> rdf:type owl:NamedIndividual ,
+                                                                                  space:RedGiant ;
+                                                                         space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn_b> ;
+                                                                         space:distanceFromSunParsec 54.6599 ;
+                                                                         space:solarMass 1.7 ;
+                                                                         space:starLuminosity 1.176 ;
+                                                                         space:starTemperatureK 5022 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn_b> rdf:type owl:NamedIndividual ,
+                                                                                    space:GasGiant ;
+                                                                           space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn> ;
+                                                                           space:discoveryYear 2008 ;
+                                                                           space:hasMass 597.8 ;
+                                                                           space:orbitalPeriodDays 899 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#YellowDwarf> ;
+                                                                          space:isOrbitedBy <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir_b> ;
+                                                                          space:distanceFromSunParsec 8.50332 ;
+                                                                          space:solarMass 0.942 ;
+                                                                          space:starLuminosity -0.07823094 ;
+                                                                          space:starTemperatureK 5585.568269170000 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir_b> rdf:type owl:NamedIndividual ,
+                                                                                     space:NeptuneLike ;
+                                                                            space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir> ;
+                                                                            space:discoveryYear 2009 ;
+                                                                            space:hasMass 5.1 ;
+                                                                            space:orbitalPeriodDays 4.2150 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54> rdf:type owl:NamedIndividual ,
+                                                                                         space:NeutronStar ;
+                                                                                space:distanceFromSun 1646.9068 ;
+                                                                                space:distanceFromSunParsec 504.9331205 ;
+                                                                                space:solarMass 1.44 .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54_System
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54_System> rdf:type owl:NamedIndividual ,
+                                                                                                space:StarSystem ;
+                                                                                       space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54_b> ;
+                                                                                       space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54> .
+
+
+###  http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54_b
+<http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54_b> rdf:type owl:NamedIndividual ,
+                                                                                           space:SuperEarth ;
+                                                                                  space:orbits <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#PSR_B0329+54> ;
+                                                                                  space:discoveryYear 2017 ;
+                                                                                  space:hasMass 1.97 ;
+                                                                                  space:isHabitable "false"^^xsd:boolean ;
+                                                                                  space:orbitalPeriodDays 10140 .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#11_UMi_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#11_UMi_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#11_UMi> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#14_And_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#14_And_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_And> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#14_Her_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#14_Her_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#14_Her> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#16_Cyg_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#16_Cyg_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#16_Cyg_B> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#17_Sco_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#17_Sco_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#17_Sco> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#18_Del_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#18_Del_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#18_Del> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#24_Boo_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#24_Boo_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Boo> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#24_Sex_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#24_Sex_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#24_Sex> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#4_UMa_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#4_UMa_System> rdf:type owl:NamedIndividual ,
+                                                                                          space:StarSystem ;
+                                                                                 space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa> ,
+                                                                                                        <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa_b> ;
+                                                                                 space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#4_UMa> ;
+                                                                                 space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#51_Eri_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#51_Eri_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Eri> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#51_Peg_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#51_Peg_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#51_Peg> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#55_Cnc_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#55_Cnc_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#55_Cnc_B> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#6_Lyn_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#6_Lyn_System> rdf:type owl:NamedIndividual ,
+                                                                                          space:StarSystem ;
+                                                                                 space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn> ,
+                                                                                                        <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn_b> ;
+                                                                                 space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#6_Lyn> ;
+                                                                                 space:locatedInGalaxy space:MilkyWay .
+
+
+###  http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#61_Vir_System
+<http://www.semanticweb.org/sharbelkhoury/ontologies/2025/11/space#61_Vir_System> rdf:type owl:NamedIndividual ,
+                                                                                           space:StarSystem ;
+                                                                                  space:hasCelestialBody <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir> ,
+                                                                                                         <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir_b> ;
+                                                                                  space:hasStar <http://www.semanticweb.org/mini-project-22/ontologies/2025/space#61_Vir> ;
+                                                                                  space:locatedInGalaxy space:MilkyWay .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
