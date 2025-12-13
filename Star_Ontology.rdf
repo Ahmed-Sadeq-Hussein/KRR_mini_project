@@ -538,7 +538,6 @@
         <untitled-ontology-16:hasStar rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000017"/>
         <untitled-ontology-16:hasStar rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000018"/>
         <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MilkyWay"/>
-        <untitled-ontology-16:orbits rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000011"/>
         <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.37</untitled-ontology-16:distanceFromSun>
         <untitled-ontology-8:numberOfstars rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-8:numberOfstars>
         <rdfs:label>Alpha Centauri</rdfs:label>
@@ -550,8 +549,8 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000016">
         <rdf:type rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#RedDwarf"/>
-        <untitled-ontology-16:hasCelestialBody rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000019"/>
-        <untitled-ontology-16:hasCelestialBody rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000021"/>
+        <untitled-ontology-16:isOrbitedBy rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000019"/>
+        <untitled-ontology-16:isOrbitedBy rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000021"/>
         <untitled-ontology-16:locatedInGalaxy rdf:resource="http://www.semanticweb.org/music/ontologies/2025/11/untitled-ontology-16#MilkyWay"/>
         <untitled-ontology-16:partOfSystem rdf:resource="http://purl.obolibrary.org/obo/OWLNamedIndividual_0000015"/>
         <untitled-ontology-16:distanceFromSun rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.37</untitled-ontology-16:distanceFromSun>
