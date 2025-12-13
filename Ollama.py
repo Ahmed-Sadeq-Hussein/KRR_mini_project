@@ -1,7 +1,7 @@
 from ollama import chat
 from ollama import ChatResponse
 
-with open("prompt.txt", "r", encoding="utf-8") as f:
+with open("query.txt", "r", encoding="utf-8") as f:
     prompt_text = f.read()
 
 response: ChatResponse = chat(model='gemma3', messages=[
